@@ -1,0 +1,45 @@
+#barsArea {
+    width: 100%;
+    height: 500px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar {
+    display: inline-block;
+    margin-right: 4px;
+    background-color: cornflowerblue;
+}
+.active {
+    background-color: red;
+}
+.next {
+    background-color: orange;
+}
+
+footer {
+    background-color: #000;
+}
+footer a {
+    color: #2690d4;
+    font-weight: 400;
+    text-decoration: none;
+}
+footer ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+footer li {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.btn-social {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}

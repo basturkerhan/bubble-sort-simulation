@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+
+    <title>BubbleSort Algorithm</title>
+  </head>
+  <body>
+    
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand">Bubble Sort Algorithm</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="https://github.com/basturkerhan" target="_blank" class="nav-link">Github</a></li>
+                    <li class="nav-item"><a href="https://www.linkedin.com/in/erhan-ba%C5%9Ft%C3%BCrk-978389194/" target="_blank" class="nav-link">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="jumbotron bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-4 font-italic">
+                        Bubble Sort Algorithm Nedir?
+                    </h1>
+                    <p class="lead mb-3">Bubble sort, en basit sıralama algoritmalarından biridir. Karşılaştırma temelli olan bu algoritmada, listedeki her bir eleman yanındaki eleman ile karşılaştırılır. Eğer ilk elemanın değeri, ikinci elemanın değerinden büyükse, iki eleman yer değiştirir ve bu işlem, tüm liste sıralanana kadar devam eder.</p>
+                    <p class="lead">Bu sayfa yardımıyla, Bubble Sort algoritmasını girdiğiniz değerler aracılığıyla simüle edebilirsiniz.</p>
+                    <p class="lead">Erhan Baştürk</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="jumbotronImg.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="barsArea">
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="card-title">Kontrol Menüsü</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-2">Algoritma simülasyonunu başlatmak için, aşağıdaki alana aralarında virgül olacak şekilde 500'den küçük değerler giriniz. Büyük değerler 500 olarak değiştirilir. Ardından simülasyonda elementler arasındaki bekleme süresini seçiniz.</p>
+                            <p>Örnek: 100,80,150,130,300,250,200,175,400,375</p>
+                                <form id="addTaskForm">
+                                    <div class="input-group">
+                                        
+                                        <input id="numbersArea" name="numbers" type="text" class="form-control" placeholder="boyutları giriniz...">
+                                        <select id="time">
+                                            <option value="0.5">0.5 Saniye</option>
+                                            <option value="1">1 Saniye</option>
+                                            <option value="2">2 Saniye</option>
+                                            <option value="3">3 Saniye</option>
+                                            <option value="4">4 Saniye</option>
+                                          </select>
+                                    </div>
+                                    <span class="input-group-btn"><button class="btn btn-primary w-100" id="submit">Başlat</button></span>
+                                </form>
+                                
+                            
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header"><h5 class="card-title">
+                            Simülasyon Durumu
+                        </h5></div>
+                        <div class="card-body">
+                            <p class="status">Simülasyon Henüz Başlamadı</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer p-4 text-white">
+        <div class="row">
+            <div class="col-lg-8 text-center">
+                <p class="lead">Bubble Sort Algorithm Simülasyonu</p>
+                <p>Bu sayfada tema için CSS framework’u olan Bootstrap ve simülasyon için Javascript kodlama dilinden yararlanılmıştır. Sayfaya ait tüm dosyalara github adresimden erişebilirsiniz.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <ul>   
+                    <li>
+                    <button class="btn-social"><a href="https://www.linkedin.com/in/erhan-ba%C5%9Ft%C3%BCrk-978389194/" target="_blank">
+                        <i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </button>
+                    </li>
+                    <li>
+                        <button class="btn-social"><a <a href="https://github.com/basturkerhan" target="_blank"><i class="fab fa-github"></i></a>
+                            
+                        </button>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="basic.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
